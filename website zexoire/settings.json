@@ -1,0 +1,570 @@
+{
+    "website" : {
+      "name": "Zexoire",
+      "avatar": "https://media.discordapp.net/attachments/836438441196519425/83772680364853268/image0.png",
+      "invite": "https://discord.com/api/oauth2/authorize?client_id=836419347484246026&permissions=1543368151&scope=bot",
+      "support": "https://discord.gg/FHmKs2HdM6",
+      "faq": "https://zexoire.gitbook.io/zexoire/information/faq",
+     "docs": "https://zexoire.gitbook.io/zexoire/",
+     "dashboard": "https://dsc.gg/zexoiresupport"
+    },
+  
+    "commands" : {
+      "Information": [{
+        "name": "help",
+        "category": "Information",
+        "description": "This command shows the directory of the zexoire's commands",
+        "permissions": ["EVERYONE"],
+        "aliases": ["h"],
+        "usage": ">help <cmd>"
+      }, {
+        "name": "botinfo",
+        "category": "Information",
+        "description": "gets the bots current information",
+        "permissions": ["EVERYONE"],
+        "aliases": ["zexinfo"],
+        "usage": "botinfo"
+      },{
+        "name": "serverinfo",
+        "category": "information",
+        "description": "Gets the server information for you for free.",
+        "permissions": ["EVERYONE"],
+        "aliases": ["sinfo"],
+        "usage": ">serverinfo"
+      }, {
+        "name": "ping",
+        "category": "Information",
+        "description": "gets the bots current latency",
+        "permissions": ["EVERYONE"],
+        "aliases": [" "],
+        "usage": ">ping"
+      }, {
+        "name": "covid",
+        "category": "Information",
+        "description": "this command can track covid from any country",
+        "permissions": ["EVERYONE"],
+        "aliases": ["corona"],
+        "usage": "covid <country | whole world>"
+      }, {
+        "name": "weather",
+        "category": "Information",
+        "description": "this command can track the weather from any country",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": "weather <country name>"
+      }, {
+        "name": "bugreport",
+        "category": "Information",
+        "description": "report a bug and it sends it to a certain channel in the support server",
+       "permissions": ["EVERYONE"],
+       "aliases": ["breport"],
+       "usage": "bugreport <the type of bug> PS:people spamming this command will get blacklisted"
+      }, {
+        "name": "invite",
+        "category": "Information",
+        "description": "this command will get the invite, website, support server of the bot",
+        "permissions": ["EVERYONE"],
+        "aliases": ["botinvite"],
+        "usage": ">invite"
+      }, {
+        "name": "avatar",
+        "category": "Information",
+        "description": "this command will get the avatar of the users ID or mention",
+        "permissions": ["EVERYONE"],
+        "aliases": ["av"],
+        "usage": ">avatar *username*"
+      }, {
+        "name": "Whois",
+        "category": "Information",
+        "description": "This command will show a users information",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">whois *Mention | ID*"
+      }, {
+        "name": "servericon",
+        "category": "Information",
+        "description": "This command will sow the servers avater",
+        "permissions": ["EVERYONE"],
+        "aliases": ["savatar"],
+        "usage": ">servericon"
+      }, {
+        "name": "uptime",
+        "category": "Information",
+        "description": "This command checks the uptime zexoire",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">uptime"
+      }, {
+        "name": "membercount",
+        "category": "Information",
+        "description": "This command will get the total number of members",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">membercount"
+      },  {
+        "name": "warnings",
+        "category": "Informaton",
+        "description": "This will check the amount of warnings a user has",
+        "permissions": ["EVERYONE"],
+        "aliases": ["warns"],
+        "usage": ">warnings <user>"
+      }],
+      "moderation": [{
+        "name": "ban",
+        "category": "moderation",
+        "description": "This command will ban members you mention",
+        "permissions": ["BAN_MEMBERS"],
+        "aliases": [""],
+        "usage": ">ban <@mention> *reason*"
+      }, {
+        "name": "kick",
+        "category": "moderation",
+        "description": "This command will kick members. Literally just yeet them away from you alright",
+        "permissions": ["KICK_MEMBERS"],
+        "aliases": ["yeet"],
+        "usage": ">kick <@mention> *reason*"
+      }, {
+        "name": "mute",
+        "category": "moderation",
+        "description": "this command will mute people. This is not a timed mute. If you are looking for timed mute you are looking for tempmute",
+        "permissions": ["MANAGE_MESSAGES", "KICK_MEMBERS"],
+        "aliases": ["shutup"],
+        "usage": ">mute <@mention> *reason*"
+      }, {
+        "name": "tempmute",
+        "category": "moderation",
+        "description": "this command will mute people. This is a timed mute btw",
+        "permissions": ["MANAGE_MESSAGES", "KICK_MEMBERS"],
+        "aliases": [""],
+        "usage": ">tempmute <@mention> <time> *reason*"
+      }, {
+        "name": "unmute",
+        "category": "moderation",
+        "description": "this command will unmute the person who is currently muted",
+        "permissions": ["MANAGE_MESSAGES", "KICK_MEMBERS"],
+        "aliases": [""],
+        "usage": ">unmute <@mention>"
+      }, {
+        "name": "lock",
+        "category": "moderation",
+        "description": "This command will lock the channel that is currently mentioned",
+        "permissions": ["MANAGE_CHANNELS"],
+        "aliases": [""],
+        "usage": ">lock <channel>"
+      }, {
+        "name": "unlock",
+        "category": "moderation",
+        "description": "this command is like  the lock command, but this command unlocks the channel",
+        "permissions": ["MANAGE_CHANNELS"],
+        "aliases": ["shutup"],
+        "usage": ">unlock <channel>"
+      }, {
+        "name": "warn",
+        "category": "moderation",
+        "description": "This command will warn anyone who is mentioned",
+        "permissions": ["MANAGE_MESSAGES"],
+        "aliases": [""],
+        "usage": ">warn <@mention> <reason>"
+      }, {
+        "name": "addrole",
+        "category": "moderation",
+        "description": "this will add a role to a user",
+        "permissions": ["MANAGE_MESSAGES"],
+        "aliases": ["arole"],
+        "usage": ">addrole <role> <user>"
+      }, {
+        "name": "removerole",
+        "category": "moderation",
+        "description": "this command will remove the role from the user that is mentioned",
+        "permissions": ["MANAGE_ROLES"],
+        "aliases": ["rr"],
+        "usage": ">removerole <role> <user>"
+      }, {
+        "name": "voicekick",
+        "category": "moderation",
+        "description": "this command will mute people. This is not a timed mute. If you are looking for timed mute you are looking for tempmute",
+        "permissions": ["KICK_MEMBERS"],
+        "aliases": ["vkick"],
+        "usage": ">voicekick <user>"
+      }, {
+        "name": "announce",
+        "category": "moderation",
+        "description": "This command will announce anything inside an embed",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": ["anoun"],
+        "usage": ">announce <message>"
+      }, {
+        "name": "resetwarns",
+        "category": "moderation",
+        "description": "this command will mute people. This is not a timed mute. If you are looking for timed mute you are looking for tempmute",
+        "permissions": ["KICK_MEMBERS"],
+        "aliases": ["rwarns"],
+        "usage": ">resetwarns <user>"
+      }, {
+        "name": "report",
+        "category": "moderation",
+        "description": "This command will report anyone. This command can be setup in your server",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">resetwarns <user>"
+      }],
+       "Fun":[{
+        "name": "haste",
+        "category": "Fun",
+        "description": "This command will put any code into a haste bin",
+        "permissions": ["EVERYONE"],
+        "aliases": ["hastebin"],
+        "usage": ">haste <code>"
+      }, {
+        "name": "pokemon",
+        "category": "Fun",
+        "description": "shows the polemons card",
+        "permissions": ["EVERYONE"],
+        "aliases": [" "],
+        "usage": ">pokemon <pokemon name>"
+      }, {
+        "name": "movie",
+        "category": "Fun",
+        "description": "Get the information of a movie ",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">movie <movie name>"
+      }, {
+        "name": "snipe",
+        "category": "Fun",
+        "description": "This command will get the last message that was deleted",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">snipe"
+       }, {
+        "name": "pat",
+        "category": "Fun",
+        "description": "This command will pat the mentioned person",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">pat <mention | ID>"
+       }, {
+        "name": "stonks",
+        "category": "Fun",
+        "description": "You will be the MR.Stonks man ",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">stonks *mention | ID*"
+       }, {
+        "name": "triggered",
+        "category": "Fun",
+        "description": "Someone will get triggered when this command is used : O",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">triggered *mention | ID*"
+       }, {
+        "name": "wasted",
+        "category": "Fun",
+        "description": "Feeling dead? Use this command",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">wasted *mention | ID*"
+       }, {
+        "name": "gay",
+        "category": "Fun",
+        "description": "Feeling out of gender? Use this command to feel gay",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">gay *mention | ID*"
+       }, {
+        "name": "meeting",
+        "category": "Fun",
+        "description": "Red is a little bit SUS use this command to call a meeting",
+        "permissions": ["EVERYONE"],   
+        "aliases": ["amongusmeeting,", ""],
+        "usage": ">meeting *random phrase*"
+       }, {
+        "name": "meme",
+        "category": "Fun",
+        "description": "post a random meme because why not?",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">meme"
+       }, {
+        "name": "shame",
+        "category": "Fun",
+        "description": "Feeling a bit o shame ??? Use this command",
+        "permissions": ["EVERYONE"],   
+        "aliases": ["shm,", "dockofshame,"],
+        "usage": ">shame *mention | ID*"
+       }, {
+        "name": "smartcat",
+        "category": "Fun",
+        "description": "feeling smart?? Use this command to be smart",
+        "permissions": ["EVERYONE"],   
+        "aliases": ["laughingcat,", "sc"],
+        "usage": ">smartcat *random phrase*"
+       }, {
+        "name": "smug",
+        "category": "Fun",
+        "description": "smug to scare other people",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">smug"
+       }, {
+        "name": "tickle",
+        "category": "Fun",
+        "description": "wanna make yourself laugh ? tickle yourself",
+        "permissions": ["EVERYONE"],   
+        "aliases": [""],
+        "usage": ">tickle"
+       }],
+       "Configurations":[{
+        "name": "setprefix",
+        "category": "Configurations",
+        "description": "This command will set the prefix of the bot",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": ["prefix"],
+        "usage": ">setprefix <new prefix>"
+       }, {
+        "name": "setmodlogs",
+        "category": "Configurations",
+        "description": "this will set the current mod logs of the bot",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": ["setmod"],
+        "usage": ">setmodlogs <channel>"
+      }, {
+        "name": "setreport",
+        "category": "Configurations",
+        "description": "this command will setup the report channel of te server",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": [""],
+        "usage": ">setreport <channel>"
+      }, {
+        "name": "setwelcome",
+        "category": "Configurations",
+        "description": "This will set the welcome channel of the server",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": ["welcome"],
+        "usage": ">setwelcome <channel>"
+      }, {
+        "name": "addmoney",
+        "category": "Configurations",
+        "description": "this will set the money of the person mentioned",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": ["amoney"],
+        "usage": ">addmoney <user> <amount>"
+      }, {
+        "name": "removemoney",
+        "category": "Configurations",
+        "description": "This will remove the amount of money of a user",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": ["rmoney"],
+        "usage": ">removemoney <user> <amount>"
+      }, {
+        "name": "disablemodlogs",
+        "category": "Configurations",
+        "description": "This will remove mod logs mod logs of a user",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": ["dmc"],
+        "usage": ">disablemodlogs"
+      }, {
+        "name": "setsuggest",
+        "category": "Configurations",
+        "description": "This will set the suggestions channel for the server",
+        "permissions": ["MANAGE_SERVER"],
+        "aliases": [""],
+        "usage": ">setsuggest <channel>"
+      }],
+      "Music":[{
+        "name": "play",
+        "category": "Music",
+        "description": "this command will play music in a voice channel",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">play <music>"
+       }, {
+         "name": "stop",
+         "category": "Music",
+         "description": "This will stop the music and leave the voice channel",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">stop"
+      }, {
+         "name": "pause",
+         "category": "Music",
+         "description": "This will pause the music",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">pause"
+      }, {
+         "name": "resume",
+         "category": "Music",
+         "description": "this will resume the music that is currently stopped",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">resume"
+      }, {
+         "name": "queue",
+         "category": "Music",
+         "description": "this will show the current queue",
+         "permissions": ["EVERYONE"],
+         "aliases": ["q"],
+         "usage": ">queue"
+      }, {
+         "name": "loop",
+         "category": "Music",
+         "description": "This will loop the music currently playing. There are modes 1 and 2. 1 repeats the music. 2 repeats the queue. To turn it off use >loop 0",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">loop <0/1/2>"
+      }, {
+         "name": "volume",
+         "category": "Music",
+         "description": "this will set the volume",
+         "permissions": ["EVERYONE"],
+         "aliases": ["vol"],
+         "usage": ">volume <1/100>"
+      }, {
+         "name": "skip",
+         "category": "Music",
+         "description": "This will skip the music currently playing",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">skip"
+      }],
+        "Economy":[{
+        "name": "work",
+        "category": "Economy",
+        "description": "You will work for money",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">work"
+       }, {
+         "name": "fish",
+         "category": "Economy",
+         "description": "You will fish for alot of money",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">fish"
+      }, {
+         "name": "slots",
+         "category": "Economy",
+         "description": "Kinda like gamble. SO lets play slots",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">slots <amount>"
+      }, {
+         "name": "roulette",
+         "category": "Economy",
+         "description": "Test your luck with roulette",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">roulette <amount>"
+      }, {
+         "name": "beg",
+         "category": "Economy",
+         "description": "You are poor so beg on the streets",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">beg"
+      }, {
+         "name": "daily",
+         "category": "Economy",
+         "description": "collect your daily money",
+         "permissions": ["EVERYONE"],
+         "aliases": ["today"],
+         "usage": ">daily"
+      }, {
+         "name": "weekly",
+         "category": "Economy",
+         "description": "collect your weekly money",
+         "permissions": ["EVERYONE"],
+         "aliases": ["week"],
+         "usage": ">weekly"
+      }, {
+         "name": "monthly",
+         "category": "Economy",
+         "description": "collect your monthly money",
+         "permissions": ["EVERYONE"],
+         "aliases": ["month"],
+         "usage": ">monthly"
+      }, {
+         "name": "collect-all",
+         "category": "Economy",
+         "description": "collect all your money from daily, weekly, monthly.",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">collect-all"
+      }, {
+         "name": "withdraw",
+         "category": "Economy",
+         "description": "witdraw some money to buy something",
+         "permissions": ["EVERYONE"],
+         "aliases": ["with"],
+         "usage": ">withdraw <amount>"
+      }, {
+         "name": "deposit",
+         "category": "Economy",
+         "description": "deposit some money to not get robbed",
+         "permissions": ["EVERYONE"],
+         "aliases": ["dep"],
+         "usage": ">deposit <amount>"
+      }, {
+         "name": "shop",
+         "category": "Economy",
+         "description": "check out whats in the shop",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">shop"
+      }, {
+         "name": "buy",
+         "category": "Economy",
+         "description": "Feeling rich? buy something",
+         "permissions": ["EVERYONE"],
+         "aliases": [""],
+         "usage": ">buy <item name>"
+      }],
+        "Extra":[{
+        "name": "start",
+        "category": "Extra",
+        "description": "start a giveaway",
+        "permissions": ["EVERYONE"],
+        "aliases": [""],
+        "usage": ">start <channel> <time> <number of winners> <prize>"
+       }, {
+        "name": "suggest",
+        "category": "Extra",
+        "description": "suggest something for your server",
+        "permissions": ["EVERYONE"],
+        "aliases": ["suggestion"],
+        "usage": ">suggest <suggestion>"
+       }, {
+        "name": "sreply",
+        "category": "Extra",
+        "description": "reply to a suggestion",
+        "permissions": ["MANAGE_MESSAGES"],
+        "aliases": [""],
+        "usage": ">sreply <suggestion ID> <reply text>"
+       }],
+       "Developer":[{
+         "name": "eval",
+         "category": "Developer",
+         "description": "Evaluates a code into JS",
+         "permissions": ["Developer"],
+         "aliases": [""],
+         "usage": ">eval <code>"
+       }, {
+         "name": "serverlist",
+         "category": "Developer",
+         "description": "Shows the list of servers the bot is in with server ID",
+         "permissions": ["Developer"],
+         "aliases": [""],
+         "usage": ">serverlist"
+       }, {
+         "name": "getinvite",
+         "category": "Developer",
+         "description": "gets the invite of the server by ID",
+         "permissions": ["Developer"],
+         "aliases": [""],
+         "usage": ">getinvite <server ID>"
+       }]
+    }
+  }
+  
+  
